@@ -1,5 +1,5 @@
 \subsection{Will Wesley}
-
+\subsubsection{Introduction}
 In authoring \emph{Go To Statement Considered Harmful}
 % doing as a footnote, because I couldn't think of a better way to cite in this shared thing.
 % yes, I briefly considered adding a bib and whatnot, but didn't want to make life hard for other contributors.
@@ -15,7 +15,7 @@ There are certain things that one \emph{can} do when creating software, but for 
   \caption{Will}
   \label{fig:will}
 \end{wrapfigure}
-Dijkstra said we by restricting how we enter blocks of code, we get some guarantees about what to expect of the system state inside those blocks.
+Dijkstra said that by restricting how we enter blocks of code, we get some guarantees about what to expect of the system state inside those blocks.
 We use typing systems to give us some guarantees about our usage of data in a program, even though data coercion and ``duck typing'' have certain advantages.
 Functional programming gives us guarantees about the behavior of functions, while restricting our ability to assign values.
 
@@ -27,7 +27,17 @@ I am currently studying for a Master's of Computer Science, which I expect to co
 I will be starting my PhD research in the spring.
 This fall, I will also be testing for my Second Degree Black Belt in Taekwondo.
 
+\subsubsection{Sneaky added requirement}
+\url{https://github.com/stryker-mutator/stryker-js} is a mutation testing tool for JavaScript.
+Mutation testing is kind of a way to test the test suite.
+If you have a test suite that has high code coverage, but asserts very little about the behavior of the code, how do you know it does what you want?
+The idea of mutation testing is to present the test suite with broken, mutated versions of your production code to see if it can detect the change.
+If it can't, you can be sure the test suite is insufficient.
 
+An interesting thing to note is that research shows that software test suites with better mutation scores (detect lots of mutations) correspond to fewer bugs found in the production code\footnote{J. H. Andrews, L. C. Briand, and Y. Labiche, ``Is mutation an appropriate tool for testing experiments?,'' in Proceedings of the 27th International Conference on Software Engineering, ICSE ’05, (New York, NY, USA), p. 402–411, Association for Computing Machinery, 2005.}.
+Further, I believe that the practice of TDD leads to better mutation scores.
+
+\subsubsection{Q \& A}
 \begin{enumerate}
     \item AN: How hard was it for you to ramp up on Computer Science?
 
